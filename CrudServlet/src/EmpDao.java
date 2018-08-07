@@ -7,7 +7,7 @@ public class EmpDao {
 		Connection con=null;
 		try{
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			con=DriverManager.getConnection("jdbc:oracle:thin:@mhadademo.cjljq8jagnyr.ap-south-1.rds.amazonaws.com:1521:ORCL","mhada","mhadademo");
+			con=DriverManager.getConnection("jdbc:oracle:thin:@endpoint-or-ip:1521:ORCL","username","password");
 		}catch(Exception e){System.out.println(e);}
 		return con;
 	}
